@@ -1,0 +1,528 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'jshint' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'jshint', null ]
+7 verbose cache add spec jshint
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'jshint',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'jshint',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed jshint@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for jshint
+11 info addNameTag [ 'jshint', 'latest' ]
+12 silly mapToRegistry name jshint
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'jshint',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'jshint',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/jshint
+17 verbose addNameTag registry:https://registry.npmjs.org/jshint not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/jshint
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 4:17:29 PM
+21 verbose request id 2534baa1b8ba8fe9
+22 verbose etag W/"581f62f3-1d691"
+23 verbose lastModified Sun, 06 Nov 2016 17:05:55 GMT
+24 http request GET https://registry.npmjs.org/jshint
+25 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+26 info attempt registry request try #2 at 4:17:39 PM
+27 verbose etag W/"581f62f3-1d691"
+28 verbose lastModified Sun, 06 Nov 2016 17:05:55 GMT
+29 http request GET https://registry.npmjs.org/jshint
+30 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+31 info attempt registry request try #3 at 4:18:39 PM
+32 verbose etag W/"581f62f3-1d691"
+33 verbose lastModified Sun, 06 Nov 2016 17:05:55 GMT
+34 http request GET https://registry.npmjs.org/jshint
+35 silly get cb [ 304, undefined ]
+36 verbose etag https://registry.npmjs.org/jshint from cache
+37 verbose get saving jshint to /Users/daniel/.npm/registry.npmjs.org/jshint/.cache.json
+38 verbose correctMkdir /Users/daniel/.npm correctMkdir not in flight; initializing
+39 silly addNameTag next cb for jshint with tag latest
+40 silly addNamed jshint@2.9.4
+41 verbose addNamed "2.9.4" is a plain semver version for jshint
+42 silly cache afterAdd jshint@2.9.4
+43 verbose afterAdd /Users/daniel/.npm/jshint/2.9.4/package/package.json not in flight; writing
+44 verbose correctMkdir /Users/daniel/.npm correctMkdir not in flight; initializing
+45 verbose afterAdd /Users/daniel/.npm/jshint/2.9.4/package/package.json written
+46 silly install resolved [ { name: 'jshint',
+46 silly install resolved     version: '2.9.4',
+46 silly install resolved     homepage: 'http://jshint.com/',
+46 silly install resolved     description: 'Static analysis tool for JavaScript',
+46 silly install resolved     author:
+46 silly install resolved      { name: 'Anton Kovalyov',
+46 silly install resolved        email: 'anton@kovalyov.net',
+46 silly install resolved        url: 'http://anton.kovalyov.net/' },
+46 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/jshint/jshint.git' },
+46 silly install resolved     bugs: { url: 'https://github.com/jshint/jshint/issues' },
+46 silly install resolved     bin: { jshint: './bin/jshint' },
+46 silly install resolved     scripts:
+46 silly install resolved      { 'browser-test-server': 'node tests/helpers/browser/server',
+46 silly install resolved        build: 'node bin/build',
+46 silly install resolved        coverage: 'istanbul -- cover ./node_modules/.bin/nodeunit tests/unit',
+46 silly install resolved        data: 'node scripts/generate-identifier-data',
+46 silly install resolved        pretest: 'node ./bin/jshint src && jscs src',
+46 silly install resolved        changelog: 'conventional-changelog -p jshint -i CHANGELOG.md -w',
+46 silly install resolved        'github-release': 'conventional-github-releaser -p jshint',
+46 silly install resolved        'test-browser': 'node tests/browser',
+46 silly install resolved        'test-cli': 'nodeunit tests/cli.js',
+46 silly install resolved        'test-node': 'npm run test-unit && npm run test-cli && npm run test-regression',
+46 silly install resolved        'test-regression': 'nodeunit tests/regression',
+46 silly install resolved        'test-unit': 'nodeunit tests/unit',
+46 silly install resolved        test: 'npm run test-node && npm run test-browser' },
+46 silly install resolved     main: './src/jshint.js',
+46 silly install resolved     dependencies:
+46 silly install resolved      { cli: '~1.0.0',
+46 silly install resolved        'console-browserify': '1.1.x',
+46 silly install resolved        exit: '0.1.x',
+46 silly install resolved        htmlparser2: '3.8.x',
+46 silly install resolved        minimatch: '~3.0.2',
+46 silly install resolved        shelljs: '0.3.x',
+46 silly install resolved        'strip-json-comments': '1.0.x',
+46 silly install resolved        lodash: '3.7.x' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { browserify: '9.x',
+46 silly install resolved        'conventional-changelog': '0.4.x',
+46 silly install resolved        'conventional-github-releaser': '0.4.x',
+46 silly install resolved        coveralls: '2.11.x',
+46 silly install resolved        istanbul: '0.3.x',
+46 silly install resolved        jscs: '1.11.x',
+46 silly install resolved        'mock-stdin': '0.3.x',
+46 silly install resolved        nodeunit: '0.9.x',
+46 silly install resolved        phantom: '~0.7.2',
+46 silly install resolved        phantomjs: '1.9.13',
+46 silly install resolved        regenerate: '1.2.x',
+46 silly install resolved        sinon: '1.12.x',
+46 silly install resolved        'unicode-6.3.0': '0.1.x' },
+46 silly install resolved     license: '(MIT AND JSON)',
+46 silly install resolved     preferGlobal: true,
+46 silly install resolved     files: [ 'bin', 'data', 'dist', 'src' ],
+46 silly install resolved     gitHead: '78b79c099fc490d93cd7aef599a1528761e9498d',
+46 silly install resolved     _id: 'jshint@2.9.4',
+46 silly install resolved     _shasum: '5e3ba97848d5290273db514aee47fe24cf592934',
+46 silly install resolved     _from: 'jshint@latest',
+46 silly install resolved     _npmVersion: '2.15.9',
+46 silly install resolved     _nodeVersion: '4.6.1',
+46 silly install resolved     _npmUser: { name: 'jugglinmike', email: 'mike@mikepennisi.com' },
+46 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '5e3ba97848d5290273db514aee47fe24cf592934',
+46 silly install resolved        tarball: 'https://registry.npmjs.org/jshint/-/jshint-2.9.4.tgz' },
+46 silly install resolved     _npmOperationalInternal:
+46 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+46 silly install resolved        tmp: 'tmp/jshint-2.9.4.tgz_1476998528694_0.19232803070917726' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/jshint/-/jshint-2.9.4.tgz',
+46 silly install resolved     readme: 'ERROR: No README data found!' } ]
+47 info install jshint@2.9.4 into /usr/local/lib
+48 info installOne jshint@2.9.4
+49 verbose installOne of jshint to /usr/local/lib not in flight; installing
+50 verbose correctMkdir /Users/daniel/.npm/_locks correctMkdir not in flight; initializing
+51 verbose lock using /Users/daniel/.npm/_locks/jshint-60c9d5e162d557b6.lock for /usr/local/lib/node_modules/jshint
+52 silly install write writing jshint 2.9.4 to /usr/local/lib/node_modules/jshint
+53 verbose unbuild lib/node_modules/jshint
+54 silly gentlyRm /usr/local/lib/node_modules/jshint is being purged from base /usr/local
+55 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jshint
+56 verbose tar unpack /Users/daniel/.npm/jshint/2.9.4/package.tgz
+57 verbose tar unpacking to /usr/local/lib/node_modules/jshint
+58 silly gentlyRm /usr/local/lib/node_modules/jshint is being purged
+59 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jshint
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+65 silly gunzTarPerm extractEntry LICENSE
+66 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+67 silly gunzTarPerm extractEntry CHANGELOG.md
+68 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+69 silly gunzTarPerm extractEntry bin/apply
+70 silly gunzTarPerm modified mode [ 'bin/apply', 509, 493 ]
+71 silly gunzTarPerm extractEntry bin/build
+72 silly gunzTarPerm modified mode [ 'bin/build', 509, 493 ]
+73 silly gunzTarPerm extractEntry bin/jshint
+74 silly gunzTarPerm modified mode [ 'bin/jshint', 509, 493 ]
+75 silly gunzTarPerm extractEntry bin/land
+76 silly gunzTarPerm modified mode [ 'bin/land', 509, 493 ]
+77 silly gunzTarPerm extractEntry data/ascii-identifier-data.js
+78 silly gunzTarPerm modified mode [ 'data/ascii-identifier-data.js', 436, 420 ]
+79 silly gunzTarPerm extractEntry data/non-ascii-identifier-part-only.js
+80 silly gunzTarPerm modified mode [ 'data/non-ascii-identifier-part-only.js', 436, 420 ]
+81 silly gunzTarPerm extractEntry data/non-ascii-identifier-start.js
+82 silly gunzTarPerm modified mode [ 'data/non-ascii-identifier-start.js', 436, 420 ]
+83 silly gunzTarPerm extractEntry dist/jshint-rhino.js
+84 silly gunzTarPerm modified mode [ 'dist/jshint-rhino.js', 509, 493 ]
+85 silly gunzTarPerm extractEntry dist/jshint.js
+86 silly gunzTarPerm modified mode [ 'dist/jshint.js', 436, 420 ]
+87 silly gunzTarPerm extractEntry src/cli.js
+88 silly gunzTarPerm modified mode [ 'src/cli.js', 436, 420 ]
+89 silly gunzTarPerm extractEntry src/lex.js
+90 silly gunzTarPerm modified mode [ 'src/lex.js', 436, 420 ]
+91 silly gunzTarPerm extractEntry src/messages.js
+92 silly gunzTarPerm modified mode [ 'src/messages.js', 436, 420 ]
+93 silly gunzTarPerm extractEntry src/name-stack.js
+94 silly gunzTarPerm modified mode [ 'src/name-stack.js', 436, 420 ]
+95 silly gunzTarPerm extractEntry src/options.js
+96 silly gunzTarPerm modified mode [ 'src/options.js', 436, 420 ]
+97 silly gunzTarPerm extractEntry src/style.js
+98 silly gunzTarPerm modified mode [ 'src/style.js', 436, 420 ]
+99 silly gunzTarPerm extractEntry src/jshint.js
+100 silly gunzTarPerm modified mode [ 'src/jshint.js', 436, 420 ]
+101 silly gunzTarPerm extractEntry src/state.js
+102 silly gunzTarPerm modified mode [ 'src/state.js', 436, 420 ]
+103 silly gunzTarPerm extractEntry src/scope-manager.js
+104 silly gunzTarPerm modified mode [ 'src/scope-manager.js', 436, 420 ]
+105 silly gunzTarPerm extractEntry src/vars.js
+106 silly gunzTarPerm modified mode [ 'src/vars.js', 436, 420 ]
+107 silly gunzTarPerm extractEntry src/reg.js
+108 silly gunzTarPerm modified mode [ 'src/reg.js', 436, 420 ]
+109 silly gunzTarPerm extractEntry src/reporters/checkstyle.js
+110 silly gunzTarPerm modified mode [ 'src/reporters/checkstyle.js', 436, 420 ]
+111 silly gunzTarPerm extractEntry src/reporters/default.js
+112 silly gunzTarPerm modified mode [ 'src/reporters/default.js', 436, 420 ]
+113 silly gunzTarPerm extractEntry src/reporters/jslint_xml.js
+114 silly gunzTarPerm modified mode [ 'src/reporters/jslint_xml.js', 436, 420 ]
+115 silly gunzTarPerm extractEntry src/reporters/non_error.js
+116 silly gunzTarPerm modified mode [ 'src/reporters/non_error.js', 436, 420 ]
+117 silly gunzTarPerm extractEntry src/reporters/unix.js
+118 silly gunzTarPerm modified mode [ 'src/reporters/unix.js', 436, 420 ]
+119 silly gunzTarPerm extractEntry src/platforms/rhino.js
+120 silly gunzTarPerm modified mode [ 'src/platforms/rhino.js', 436, 420 ]
+121 verbose write writing to /usr/local/lib/node_modules/jshint/package.json
+122 info preinstall jshint@2.9.4
+123 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/jshint/package.json
+124 silly prepareForInstallMany adding cli@~1.0.0 from jshint dependencies
+125 silly prepareForInstallMany adding console-browserify@1.1.x from jshint dependencies
+126 silly prepareForInstallMany adding exit@0.1.x from jshint dependencies
+127 silly prepareForInstallMany adding htmlparser2@3.8.x from jshint dependencies
+128 silly prepareForInstallMany adding minimatch@~3.0.2 from jshint dependencies
+129 silly prepareForInstallMany adding shelljs@0.3.x from jshint dependencies
+130 silly prepareForInstallMany adding strip-json-comments@1.0.x from jshint dependencies
+131 silly prepareForInstallMany adding lodash@3.7.x from jshint dependencies
+132 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/jshint/package.json
+133 silly cache add args [ 'exit@0.1.x', null ]
+134 verbose cache add spec exit@0.1.x
+135 silly cache add parsed spec Result {
+135 silly cache add   raw: 'exit@0.1.x',
+135 silly cache add   scope: null,
+135 silly cache add   name: 'exit',
+135 silly cache add   rawSpec: '0.1.x',
+135 silly cache add   spec: '>=0.1.0 <0.2.0',
+135 silly cache add   type: 'range' }
+136 silly addNamed exit@>=0.1.0 <0.2.0
+137 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for exit
+138 silly addNameRange { name: 'exit', range: '>=0.1.0 <0.2.0', hasData: false }
+139 silly mapToRegistry name exit
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry data Result {
+142 silly mapToRegistry   raw: 'exit',
+142 silly mapToRegistry   scope: null,
+142 silly mapToRegistry   name: 'exit',
+142 silly mapToRegistry   rawSpec: '',
+142 silly mapToRegistry   spec: 'latest',
+142 silly mapToRegistry   type: 'tag' }
+143 silly mapToRegistry uri https://registry.npmjs.org/exit
+144 verbose addNameRange registry:https://registry.npmjs.org/exit not in flight; fetching
+145 silly cache add args [ 'htmlparser2@3.8.x', null ]
+146 verbose cache add spec htmlparser2@3.8.x
+147 silly cache add parsed spec Result {
+147 silly cache add   raw: 'htmlparser2@3.8.x',
+147 silly cache add   scope: null,
+147 silly cache add   name: 'htmlparser2',
+147 silly cache add   rawSpec: '3.8.x',
+147 silly cache add   spec: '>=3.8.0 <3.9.0',
+147 silly cache add   type: 'range' }
+148 silly addNamed htmlparser2@>=3.8.0 <3.9.0
+149 verbose addNamed ">=3.8.0 <3.9.0" is a valid semver range for htmlparser2
+150 silly addNameRange { name: 'htmlparser2', range: '>=3.8.0 <3.9.0', hasData: false }
+151 silly mapToRegistry name htmlparser2
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry data Result {
+154 silly mapToRegistry   raw: 'htmlparser2',
+154 silly mapToRegistry   scope: null,
+154 silly mapToRegistry   name: 'htmlparser2',
+154 silly mapToRegistry   rawSpec: '',
+154 silly mapToRegistry   spec: 'latest',
+154 silly mapToRegistry   type: 'tag' }
+155 silly mapToRegistry uri https://registry.npmjs.org/htmlparser2
+156 verbose addNameRange registry:https://registry.npmjs.org/htmlparser2 not in flight; fetching
+157 silly cache add args [ 'minimatch@~3.0.2', null ]
+158 verbose cache add spec minimatch@~3.0.2
+159 silly cache add parsed spec Result {
+159 silly cache add   raw: 'minimatch@~3.0.2',
+159 silly cache add   scope: null,
+159 silly cache add   name: 'minimatch',
+159 silly cache add   rawSpec: '~3.0.2',
+159 silly cache add   spec: '>=3.0.2 <3.1.0',
+159 silly cache add   type: 'range' }
+160 silly addNamed minimatch@>=3.0.2 <3.1.0
+161 verbose addNamed ">=3.0.2 <3.1.0" is a valid semver range for minimatch
+162 silly addNameRange { name: 'minimatch', range: '>=3.0.2 <3.1.0', hasData: false }
+163 silly mapToRegistry name minimatch
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry data Result {
+166 silly mapToRegistry   raw: 'minimatch',
+166 silly mapToRegistry   scope: null,
+166 silly mapToRegistry   name: 'minimatch',
+166 silly mapToRegistry   rawSpec: '',
+166 silly mapToRegistry   spec: 'latest',
+166 silly mapToRegistry   type: 'tag' }
+167 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+168 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+169 silly cache add args [ 'shelljs@0.3.x', null ]
+170 verbose cache add spec shelljs@0.3.x
+171 silly cache add parsed spec Result {
+171 silly cache add   raw: 'shelljs@0.3.x',
+171 silly cache add   scope: null,
+171 silly cache add   name: 'shelljs',
+171 silly cache add   rawSpec: '0.3.x',
+171 silly cache add   spec: '>=0.3.0 <0.4.0',
+171 silly cache add   type: 'range' }
+172 silly addNamed shelljs@>=0.3.0 <0.4.0
+173 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for shelljs
+174 silly addNameRange { name: 'shelljs', range: '>=0.3.0 <0.4.0', hasData: false }
+175 silly mapToRegistry name shelljs
+176 silly mapToRegistry using default registry
+177 silly mapToRegistry registry https://registry.npmjs.org/
+178 silly mapToRegistry data Result {
+178 silly mapToRegistry   raw: 'shelljs',
+178 silly mapToRegistry   scope: null,
+178 silly mapToRegistry   name: 'shelljs',
+178 silly mapToRegistry   rawSpec: '',
+178 silly mapToRegistry   spec: 'latest',
+178 silly mapToRegistry   type: 'tag' }
+179 silly mapToRegistry uri https://registry.npmjs.org/shelljs
+180 verbose addNameRange registry:https://registry.npmjs.org/shelljs not in flight; fetching
+181 silly cache add args [ 'strip-json-comments@1.0.x', null ]
+182 verbose cache add spec strip-json-comments@1.0.x
+183 silly cache add parsed spec Result {
+183 silly cache add   raw: 'strip-json-comments@1.0.x',
+183 silly cache add   scope: null,
+183 silly cache add   name: 'strip-json-comments',
+183 silly cache add   rawSpec: '1.0.x',
+183 silly cache add   spec: '>=1.0.0 <1.1.0',
+183 silly cache add   type: 'range' }
+184 silly addNamed strip-json-comments@>=1.0.0 <1.1.0
+185 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for strip-json-comments
+186 silly addNameRange { name: 'strip-json-comments',
+186 silly addNameRange   range: '>=1.0.0 <1.1.0',
+186 silly addNameRange   hasData: false }
+187 silly mapToRegistry name strip-json-comments
+188 silly mapToRegistry using default registry
+189 silly mapToRegistry registry https://registry.npmjs.org/
+190 silly mapToRegistry data Result {
+190 silly mapToRegistry   raw: 'strip-json-comments',
+190 silly mapToRegistry   scope: null,
+190 silly mapToRegistry   name: 'strip-json-comments',
+190 silly mapToRegistry   rawSpec: '',
+190 silly mapToRegistry   spec: 'latest',
+190 silly mapToRegistry   type: 'tag' }
+191 silly mapToRegistry uri https://registry.npmjs.org/strip-json-comments
+192 verbose addNameRange registry:https://registry.npmjs.org/strip-json-comments not in flight; fetching
+193 silly cache add args [ 'lodash@3.7.x', null ]
+194 verbose cache add spec lodash@3.7.x
+195 silly cache add parsed spec Result {
+195 silly cache add   raw: 'lodash@3.7.x',
+195 silly cache add   scope: null,
+195 silly cache add   name: 'lodash',
+195 silly cache add   rawSpec: '3.7.x',
+195 silly cache add   spec: '>=3.7.0 <3.8.0',
+195 silly cache add   type: 'range' }
+196 silly addNamed lodash@>=3.7.0 <3.8.0
+197 verbose addNamed ">=3.7.0 <3.8.0" is a valid semver range for lodash
+198 silly addNameRange { name: 'lodash', range: '>=3.7.0 <3.8.0', hasData: false }
+199 silly mapToRegistry name lodash
+200 silly mapToRegistry using default registry
+201 silly mapToRegistry registry https://registry.npmjs.org/
+202 silly mapToRegistry data Result {
+202 silly mapToRegistry   raw: 'lodash',
+202 silly mapToRegistry   scope: null,
+202 silly mapToRegistry   name: 'lodash',
+202 silly mapToRegistry   rawSpec: '',
+202 silly mapToRegistry   spec: 'latest',
+202 silly mapToRegistry   type: 'tag' }
+203 silly mapToRegistry uri https://registry.npmjs.org/lodash
+204 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+205 silly cache add args [ 'cli@~1.0.0', null ]
+206 verbose cache add spec cli@~1.0.0
+207 silly cache add parsed spec Result {
+207 silly cache add   raw: 'cli@~1.0.0',
+207 silly cache add   scope: null,
+207 silly cache add   name: 'cli',
+207 silly cache add   rawSpec: '~1.0.0',
+207 silly cache add   spec: '>=1.0.0 <1.1.0',
+207 silly cache add   type: 'range' }
+208 silly addNamed cli@>=1.0.0 <1.1.0
+209 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for cli
+210 silly addNameRange { name: 'cli', range: '>=1.0.0 <1.1.0', hasData: false }
+211 silly mapToRegistry name cli
+212 silly mapToRegistry using default registry
+213 silly mapToRegistry registry https://registry.npmjs.org/
+214 silly mapToRegistry data Result {
+214 silly mapToRegistry   raw: 'cli',
+214 silly mapToRegistry   scope: null,
+214 silly mapToRegistry   name: 'cli',
+214 silly mapToRegistry   rawSpec: '',
+214 silly mapToRegistry   spec: 'latest',
+214 silly mapToRegistry   type: 'tag' }
+215 silly mapToRegistry uri https://registry.npmjs.org/cli
+216 verbose addNameRange registry:https://registry.npmjs.org/cli not in flight; fetching
+217 silly cache add args [ 'console-browserify@1.1.x', null ]
+218 verbose cache add spec console-browserify@1.1.x
+219 silly cache add parsed spec Result {
+219 silly cache add   raw: 'console-browserify@1.1.x',
+219 silly cache add   scope: null,
+219 silly cache add   name: 'console-browserify',
+219 silly cache add   rawSpec: '1.1.x',
+219 silly cache add   spec: '>=1.1.0 <1.2.0',
+219 silly cache add   type: 'range' }
+220 silly addNamed console-browserify@>=1.1.0 <1.2.0
+221 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for console-browserify
+222 silly addNameRange { name: 'console-browserify',
+222 silly addNameRange   range: '>=1.1.0 <1.2.0',
+222 silly addNameRange   hasData: false }
+223 silly mapToRegistry name console-browserify
+224 silly mapToRegistry using default registry
+225 silly mapToRegistry registry https://registry.npmjs.org/
+226 silly mapToRegistry data Result {
+226 silly mapToRegistry   raw: 'console-browserify',
+226 silly mapToRegistry   scope: null,
+226 silly mapToRegistry   name: 'console-browserify',
+226 silly mapToRegistry   rawSpec: '',
+226 silly mapToRegistry   spec: 'latest',
+226 silly mapToRegistry   type: 'tag' }
+227 silly mapToRegistry uri https://registry.npmjs.org/console-browserify
+228 verbose addNameRange registry:https://registry.npmjs.org/console-browserify not in flight; fetching
+229 verbose request uri https://registry.npmjs.org/exit
+230 verbose request no auth needed
+231 info attempt registry request try #1 at 4:18:39 PM
+232 http request GET https://registry.npmjs.org/exit
+233 verbose request uri https://registry.npmjs.org/htmlparser2
+234 verbose request no auth needed
+235 info attempt registry request try #1 at 4:18:39 PM
+236 http request GET https://registry.npmjs.org/htmlparser2
+237 verbose request uri https://registry.npmjs.org/minimatch
+238 verbose request no auth needed
+239 info attempt registry request try #1 at 4:18:39 PM
+240 http request GET https://registry.npmjs.org/minimatch
+241 verbose request uri https://registry.npmjs.org/shelljs
+242 verbose request no auth needed
+243 info attempt registry request try #1 at 4:18:39 PM
+244 http request GET https://registry.npmjs.org/shelljs
+245 verbose request uri https://registry.npmjs.org/strip-json-comments
+246 verbose request no auth needed
+247 info attempt registry request try #1 at 4:18:39 PM
+248 http request GET https://registry.npmjs.org/strip-json-comments
+249 verbose request uri https://registry.npmjs.org/lodash
+250 verbose request no auth needed
+251 info attempt registry request try #1 at 4:18:39 PM
+252 http request GET https://registry.npmjs.org/lodash
+253 verbose request uri https://registry.npmjs.org/cli
+254 verbose request no auth needed
+255 info attempt registry request try #1 at 4:18:39 PM
+256 http request GET https://registry.npmjs.org/cli
+257 verbose request uri https://registry.npmjs.org/console-browserify
+258 verbose request no auth needed
+259 info attempt registry request try #1 at 4:18:39 PM
+260 http request GET https://registry.npmjs.org/console-browserify
+261 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+262 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+263 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+264 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+265 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+266 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+267 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+268 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+269 info attempt registry request try #2 at 4:18:49 PM
+270 http request GET https://registry.npmjs.org/exit
+271 info attempt registry request try #2 at 4:18:49 PM
+272 http request GET https://registry.npmjs.org/htmlparser2
+273 info attempt registry request try #2 at 4:18:49 PM
+274 http request GET https://registry.npmjs.org/minimatch
+275 info attempt registry request try #2 at 4:18:49 PM
+276 http request GET https://registry.npmjs.org/shelljs
+277 info attempt registry request try #2 at 4:18:49 PM
+278 http request GET https://registry.npmjs.org/strip-json-comments
+279 info attempt registry request try #2 at 4:18:49 PM
+280 http request GET https://registry.npmjs.org/lodash
+281 info attempt registry request try #2 at 4:18:49 PM
+282 http request GET https://registry.npmjs.org/cli
+283 info attempt registry request try #2 at 4:18:49 PM
+284 http request GET https://registry.npmjs.org/console-browserify
+285 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+286 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+287 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+288 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+289 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+290 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+291 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+292 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+293 info attempt registry request try #3 at 4:19:49 PM
+294 http request GET https://registry.npmjs.org/exit
+295 info attempt registry request try #3 at 4:19:49 PM
+296 http request GET https://registry.npmjs.org/htmlparser2
+297 info attempt registry request try #3 at 4:19:49 PM
+298 http request GET https://registry.npmjs.org/minimatch
+299 info attempt registry request try #3 at 4:19:49 PM
+300 http request GET https://registry.npmjs.org/shelljs
+301 info attempt registry request try #3 at 4:19:49 PM
+302 http request GET https://registry.npmjs.org/strip-json-comments
+303 info attempt registry request try #3 at 4:19:49 PM
+304 http request GET https://registry.npmjs.org/lodash
+305 info attempt registry request try #3 at 4:19:49 PM
+306 http request GET https://registry.npmjs.org/cli
+307 info attempt registry request try #3 at 4:19:49 PM
+308 http request GET https://registry.npmjs.org/console-browserify
+309 verbose about to build /usr/local/lib/node_modules/jshint
+310 verbose unlock done using /Users/daniel/.npm/_locks/jshint-60c9d5e162d557b6.lock for /usr/local/lib/node_modules/jshint
+311 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+311 verbose stack     at errnoException (dns.js:27:10)
+311 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:78:26)
+312 verbose cwd /Users/daniel/Udacity/Front End Web Developer/FrontEnd-Online-Resume
+313 error Darwin 16.1.0
+314 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "jshint"
+315 error node v4.5.0
+316 error npm  v2.15.9
+317 error code ENOTFOUND
+318 error errno ENOTFOUND
+319 error syscall getaddrinfo
+320 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+320 error network This is most likely not a problem with npm itself
+320 error network and is related to network connectivity.
+320 error network In most cases you are behind a proxy or have bad network settings.
+320 error network
+320 error network If you are behind a proxy, please make sure that the
+320 error network 'proxy' config is set properly.  See: 'npm help config'
+321 verbose exit [ 1, true ]
+322 verbose unbuild lib/node_modules/jshint
+323 info preuninstall jshint@2.9.4
+324 info uninstall jshint@2.9.4
+325 verbose unbuild rmStuff jshint@2.9.4 from /usr/local/lib/node_modules
+326 silly gentlyRm /usr/local/bin/jshint is being gently removed
+327 silly gentlyRm verifying /usr/local is an npm working directory
+328 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+329 silly gentlyRm deletion target /usr/local/bin/jshint is under /usr/local
+330 verbose gentlyRm vacuuming from /usr/local/bin/jshint up to /usr/local
+331 info postuninstall jshint@2.9.4
+332 silly gentlyRm /usr/local/lib/node_modules/jshint is being purged from base /usr/local
+333 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jshint
+334 silly vacuum-fs purging /usr/local/lib/node_modules/jshint
+335 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sydney Map</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="search-area" id="search-area">
+        <input class="search-input" data-bind="value: query, valueUpdate: 'keyup'" placeholder="Sydney Map">
+        <ul class="location-list" data-bind="template: {name: 'location', foreach: filteredLocations}"></ul>
+    </aside>
+
+    <main class="map" id="map"></main>
+
+    <script type="text/html" id="location">
+        <li class="location-item" data-bind="text: title, click: openInfowindow"></li>
+    </script>
+
+    <script src="lib/knockout-3.4.0.js"></script>
+    <script src="lib/jquery-3.1.0.min.js"></script>
+    <script src="js/application.js"></script>
+    <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCYn7E5ExmBil7yTJXZX8zGdGImcpTpbsQ&callback=initMap" onerror="error()"></script>
+</body>
+</html>

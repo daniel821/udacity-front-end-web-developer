@@ -1,0 +1,21 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
+}
+
+.container {
+    font-family: "Lato", sans-serif;
+    color: #666666;
+}
+
+hr {
+    background-color: #7d97ad !important;
+    color: #7d97ad !important;
+    height: 2px !important;
+    width: 1150px !important;
+}
+
+h2 {
+    font-weight: bold;
+}
